@@ -1,5 +1,10 @@
-# Horizons: A Social Journey
+# Horizons
 
-A serious game for autistic child to recognize facial emotion and help to learn daily tasks.
+**A Social Journey for the Good People who have `Autism Spectrum Disorder`.**
 
-<!-- this is pushed from another branch -->
+---
+
+## Reference Videos
+
+- https://www.youtube.com/watch?v=CWzElZfWxuI
+- https://www.youtube.com/watch?v=6LhrhoBzaII
