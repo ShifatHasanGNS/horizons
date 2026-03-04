@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://vllhs7u4jq74"]
+
+[ext_resource type="Texture2D" uid="uid://dldr275blokns" path="res://Assets/SpriteSheets/SpriteSheet_02.png" id="1_eg8pm"]
+
+[node name="Chapter1(avatarCreation)" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(592.25, 324)
+scale = Vector2(1.588961, 1.3333334)
+texture = ExtResource("1_eg8pm")
+region_enabled = true
+region_rect = Rect2(766.3585, 508.7661, 770.89343, 516.4607)
