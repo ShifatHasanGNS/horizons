@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://dhxr2j23myd3y"]
+[gd_scene load_steps=24 format=3 uid="uid://dhxr2j23myd3y"]
 
 [ext_resource type="Texture2D" uid="uid://cclmthmi8cjsx" path="res://Assets/Sprites/room.png" id="1_jjgbg"]
 [ext_resource type="Texture2D" uid="uid://b4u5w5t7h5gqu" path="res://Assets/Sprites/box.png" id="2_21xkr"]
@@ -41,31 +41,31 @@ size = Vector2(93.51831, 61.31047)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fdnlq"]
 size = Vector2(64, 76.44021)
 
-[node name="Main" type="Node2D" unique_id=1185650382]
+[node name="Main" type="Node2D"]
 
-[node name="Room" type="Sprite2D" parent="." unique_id=162605595]
+[node name="Room" type="Sprite2D" parent="."]
 position = Vector2(603, 362)
 scale = Vector2(0.9524739, 0.95247394)
 texture = ExtResource("1_jjgbg")
 region_enabled = true
 region_rect = Rect2(0, 0, 1283.4453, 768)
 
-[node name="Camera" type="Camera2D" parent="Room" unique_id=1812305836]
+[node name="Camera" type="Camera2D" parent="Room"]
 position = Vector2(-1.0499268, 24.147644)
 scale = Vector2(1.0498976, 1.0498973)
 
-[node name="Info" type="Sprite2D" parent="Room" unique_id=1109618055]
+[node name="Info" type="Sprite2D" parent="Room"]
 position = Vector2(195.80592, -264.04922)
 scale = Vector2(0.7003649, 0.3371438)
 texture = ExtResource("2_21xkr")
 region_enabled = true
 region_rect = Rect2(108, 280, 808, 464)
 
-[node name="Label" type="Label" parent="Room" unique_id=603664805]
-offset_left = -68.2433
-offset_top = -320.2188
-offset_right = 461.7567
-offset_bottom = -207.21881
+[node name="Label" type="Label" parent="Room"]
+offset_left = -67.19347
+offset_top = -325.46823
+offset_right = 462.80652
+offset_bottom = -212.46823
 theme_override_colors/font_color = Color(0.24313726, 0.32156864, 0.38431373, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = SubResource("SystemFont_6bp64")
@@ -76,150 +76,150 @@ horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="Correct_Soft" type="Sprite2D" parent="." unique_id=1764571382]
+[node name="Correct_Soft" type="Sprite2D" parent="."]
 position = Vector2(974.0894, 411.91867)
 scale = Vector2(0.124452606, 0.124452606)
 texture = ExtResource("7_6bp64")
 region_enabled = true
 region_rect = Rect2(134, 135, 755, 754)
 
-[node name="Correct_Hard" type="Sprite2D" parent="." unique_id=1436230515]
+[node name="Correct_Hard" type="Sprite2D" parent="."]
 position = Vector2(225, 371.91864)
 scale = Vector2(0.124452606, 0.124452606)
 texture = ExtResource("7_6bp64")
 region_enabled = true
 region_rect = Rect2(134, 135, 755, 754)
 
-[node name="Area2D_Hard" type="Area2D" parent="." unique_id=1859647819]
+[node name="Area2D_Hard" type="Area2D" parent="."]
 position = Vector2(240, 579)
 scale = Vector2(0.21354166, 0.21354164)
 script = ExtResource("4_wsu2k")
 
-[node name="HardContainer" type="Sprite2D" parent="Area2D_Hard" unique_id=249197650]
+[node name="HardContainer" type="Sprite2D" parent="Area2D_Hard"]
 texture = ExtResource("2_kry3j")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D_Hard" unique_id=532949540]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D_Hard"]
 position = Vector2(-4.68293, -206.04874)
 rotation = -1.5762038
 shape = SubResource("CapsuleShape2D_344ge")
 
-[node name="Area2D_Soft" type="Area2D" parent="." unique_id=1129614127]
+[node name="Area2D_Soft" type="Area2D" parent="."]
 position = Vector2(972, 593.9999)
 scale = Vector2(0.21028641, 0.21028644)
 script = ExtResource("6_k12tt")
 
-[node name="SoftContainer" type="Sprite2D" parent="Area2D_Soft" unique_id=1900102698]
+[node name="SoftContainer" type="Sprite2D" parent="Area2D_Soft"]
 position = Vector2(0, 0.00024414063)
 texture = ExtResource("3_21xkr")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D_Soft" unique_id=733679773]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D_Soft"]
 position = Vector2(-14.266312, -166.43901)
 rotation = -1.5762038
 scale = Vector2(1.0154798, 1.01548)
 shape = SubResource("CapsuleShape2D_344ge")
 
-[node name="Node2D_Cube" type="Node2D" parent="." unique_id=1213034920]
+[node name="Node2D_Cube" type="Node2D" parent="."]
 position = Vector2(73, 64)
 script = ExtResource("9_ynf5e")
 
-[node name="HardItem_Cube" type="Sprite2D" parent="Node2D_Cube" unique_id=1873353912]
+[node name="HardItem_Cube" type="Sprite2D" parent="Node2D_Cube"]
 position = Vector2(370, 534)
 scale = Vector2(0.22460938, 0.22460935)
 texture = ExtResource("5_344ge")
 region_enabled = true
 region_rect = Rect2(112, 331, 243, 256)
 
-[node name="Area2D_Cube" type="Area2D" parent="Node2D_Cube" unique_id=392650861]
+[node name="Area2D_Cube" type="Area2D" parent="Node2D_Cube"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D_Cube/Area2D_Cube" unique_id=816602393]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D_Cube/Area2D_Cube"]
 position = Vector2(370, 533.75)
 shape = SubResource("CircleShape2D_344ge")
 
-[node name="Node2D_Cloth" type="Node2D" parent="." unique_id=172994112]
+[node name="Node2D_Cloth" type="Node2D" parent="."]
 position = Vector2(73, 64)
 script = ExtResource("8_ynf5e")
 
-[node name="SoftItems_Cloth" type="Sprite2D" parent="Node2D_Cloth" unique_id=911217161]
+[node name="SoftItems_Cloth" type="Sprite2D" parent="Node2D_Cloth"]
 position = Vector2(501, 512)
 scale = Vector2(0.18750006, 0.18750004)
 texture = ExtResource("4_6bp64")
 region_enabled = true
 region_rect = Rect2(502, 143, 449, 333)
 
-[node name="Area2D_Cloth" type="Area2D" parent="Node2D_Cloth" unique_id=135129730]
+[node name="Area2D_Cloth" type="Area2D" parent="Node2D_Cloth"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D_Cloth/Area2D_Cloth" unique_id=163843933]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D_Cloth/Area2D_Cloth"]
 position = Vector2(500.99994, 509.99997)
 rotation = 1.5029943
 shape = SubResource("CapsuleShape2D_ynf5e")
 
-[node name="Node2D_Doll" type="Node2D" parent="." unique_id=1533123728]
+[node name="Node2D_Doll" type="Node2D" parent="."]
 position = Vector2(73, 64)
 script = ExtResource("10_fdnlq")
 
-[node name="SoftItem_Doll" type="Sprite2D" parent="Node2D_Doll" unique_id=1675797436]
+[node name="SoftItem_Doll" type="Sprite2D" parent="Node2D_Doll"]
 position = Vector2(268.99997, 581)
 scale = Vector2(0.18750006, 0.18750004)
 texture = ExtResource("4_6bp64")
 region_enabled = true
 region_rect = Rect2(99, 165, 332, 449)
 
-[node name="Area2D_Doll" type="Area2D" parent="Node2D_Doll" unique_id=221117460]
+[node name="Area2D_Doll" type="Area2D" parent="Node2D_Doll"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D_Doll/Area2D_Doll" unique_id=1392655183]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D_Doll/Area2D_Doll"]
 position = Vector2(268, 580)
 shape = SubResource("RectangleShape2D_hptm8")
 
-[node name="Node2D_Pillow" type="Node2D" parent="." unique_id=1075303198]
+[node name="Node2D_Pillow" type="Node2D" parent="."]
 position = Vector2(73, 64)
 script = ExtResource("11_jkdf5")
 
-[node name="SoftItems_Pillow" type="Sprite2D" parent="Node2D_Pillow" unique_id=1088502336]
+[node name="SoftItems_Pillow" type="Sprite2D" parent="Node2D_Pillow"]
 position = Vector2(608, 590)
 scale = Vector2(0.18750006, 0.18750004)
 texture = ExtResource("4_6bp64")
 region_enabled = true
 region_rect = Rect2(440, 572, 514, 332)
 
-[node name="Area2D_Pillow" type="Area2D" parent="Node2D_Pillow" unique_id=893677604]
+[node name="Area2D_Pillow" type="Area2D" parent="Node2D_Pillow"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D_Pillow/Area2D_Pillow" unique_id=1891154705]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D_Pillow/Area2D_Pillow"]
 position = Vector2(606.7373, 589.311)
 rotation = 0.5269173
 shape = SubResource("RectangleShape2D_6iyac")
 
-[node name="Node2D_Car" type="Node2D" parent="." unique_id=1863984010]
+[node name="Node2D_Car" type="Node2D" parent="."]
 position = Vector2(73, 64)
 script = ExtResource("12_wsu2k")
 
-[node name="HardItems_Car" type="Sprite2D" parent="Node2D_Car" unique_id=1251009093]
+[node name="HardItems_Car" type="Sprite2D" parent="Node2D_Car"]
 position = Vector2(460.00003, 594)
 scale = Vector2(0.22460938, 0.22460935)
 texture = ExtResource("5_344ge")
 region_enabled = true
 region_rect = Rect2(376, 580, 443, 332)
 
-[node name="Area2D_Car" type="Area2D" parent="Node2D_Car" unique_id=698507934]
+[node name="Area2D_Car" type="Area2D" parent="Node2D_Car"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D_Car/Area2D_Car" unique_id=1135719677]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D_Car/Area2D_Car"]
 position = Vector2(461.99997, 593)
 rotation = 0.29222724
 shape = SubResource("RectangleShape2D_d1ilt")
 
-[node name="Node2D_Book" type="Node2D" parent="." unique_id=1657675598]
+[node name="Node2D_Book" type="Node2D" parent="."]
 position = Vector2(73, 64)
 script = ExtResource("13_k12tt")
 
-[node name="HardItems_Book" type="Sprite2D" parent="Node2D_Book" unique_id=870479168]
+[node name="HardItems_Book" type="Sprite2D" parent="Node2D_Book"]
 position = Vector2(680, 497)
 scale = Vector2(0.22460938, 0.22460935)
 texture = ExtResource("5_344ge")
 region_enabled = true
 region_rect = Rect2(625, 103, 283, 423)
 
-[node name="Area2D_Book" type="Area2D" parent="Node2D_Book" unique_id=974876900]
+[node name="Area2D_Book" type="Area2D" parent="Node2D_Book"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D_Book/Area2D_Book" unique_id=1473324888]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D_Book/Area2D_Book"]
 position = Vector2(679.00006, 496)
 rotation = 0.14625853
 scale = Vector2(0.99999994, 0.99999994)
