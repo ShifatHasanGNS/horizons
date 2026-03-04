@@ -1,12 +1,29 @@
-[gd_scene load_steps=2 format=3 uid="uid://vllhs7u4jq74"]
+[gd_scene load_steps=3 format=3 uid="uid://vllhs7u4jq74"]
 
 [ext_resource type="Texture2D" uid="uid://dldr275blokns" path="res://Assets/SpriteSheets/SpriteSheet_02.png" id="1_eg8pm"]
+[ext_resource type="Texture2D" uid="uid://dp8maqmtiyqby" path="res://Assets/SpriteSheets/SpriteSheet_01.png" id="2_35c8n"]
 
 [node name="Chapter1(avatarCreation)" type="Node2D"]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="background" type="Sprite2D" parent="."]
 position = Vector2(592.25, 324)
 scale = Vector2(1.588961, 1.3333334)
 texture = ExtResource("1_eg8pm")
 region_enabled = true
 region_rect = Rect2(766.3585, 508.7661, 770.89343, 516.4607)
+
+[node name="Avatar" type="Node2D" parent="."]
+
+[node name="character" type="Sprite2D" parent="Avatar"]
+position = Vector2(626, 407.00003)
+scale = Vector2(0.78015566, 0.86627907)
+texture = ExtResource("2_35c8n")
+region_enabled = true
+region_rect = Rect2(521.38513, 259.62473, 257.0166, 516.3911)
+
+[node name="hair" type="Sprite2D" parent="Avatar"]
+position = Vector2(627.99994, 274)
+scale = Vector2(1.0766447, 1.0295521)
+texture = ExtResource("2_35c8n")
+region_enabled = true
+region_rect = Rect2(1274, 34.178688, 201.00024, 223.00027)
