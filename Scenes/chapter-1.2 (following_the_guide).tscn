@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://fqih4sfuwa2j"]
+
+[ext_resource type="Texture2D" uid="uid://oy7kgqjsebfg" path="res://Assets/SpriteSheets/SpriteSheet_09.png" id="1_4xl3v"]
+
+[node name="Chapter-2 (following the guide)" type="Node2D"]
+
+[node name="SpriteSheet09" type="Sprite2D" parent="."]
+position = Vector2(579.5, 320.50003)
+scale = Vector2(0.750651, 0.6298828)
+texture = ExtResource("1_4xl3v")
