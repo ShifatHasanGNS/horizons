@@ -6,24 +6,93 @@
 [node name="Chapter1(avatarCreation)" type="Node2D"]
 
 [node name="background" type="Sprite2D" parent="."]
-position = Vector2(592.25, 324)
+position = Vector2(605, 311)
 scale = Vector2(1.588961, 1.3333334)
 texture = ExtResource("1_eg8pm")
 region_enabled = true
 region_rect = Rect2(766.3585, 508.7661, 770.89343, 516.4607)
 
-[node name="Avatar" type="Node2D" parent="."]
-
-[node name="character" type="Sprite2D" parent="Avatar"]
-position = Vector2(626, 407.00003)
-scale = Vector2(0.78015566, 0.86627907)
+[node name="avatar_body" type="Sprite2D" parent="."]
+position = Vector2(588, 421)
 texture = ExtResource("2_35c8n")
 region_enabled = true
-region_rect = Rect2(521.38513, 259.62473, 257.0166, 516.3911)
+region_rect = Rect2(553, 280, 198, 449)
 
-[node name="hair" type="Sprite2D" parent="Avatar"]
-position = Vector2(627.99994, 274)
-scale = Vector2(1.0766447, 1.0295521)
+[node name="black_hair" type="Sprite2D" parent="."]
+position = Vector2(580, 282.1875)
+scale = Vector2(1.2972974, 1.1782789)
 texture = ExtResource("2_35c8n")
 region_enabled = true
-region_rect = Rect2(1274, 34.178688, 201.00024, 223.00027)
+region_rect = Rect2(1276, 54, 185, 183)
+
+[node name="blonde_hair" type="Sprite2D" parent="."]
+position = Vector2(387, 87)
+texture = ExtResource("2_35c8n")
+region_enabled = true
+region_rect = Rect2(903, 61, 176, 164)
+
+[node name="curley_hair" type="Sprite2D" parent="."]
+position = Vector2(138, 90)
+texture = ExtResource("2_35c8n")
+region_enabled = true
+region_rect = Rect2(508, 58, 194, 161)
+
+[node name="shirt_red" type="Sprite2D" parent="."]
+position = Vector2(1054, 98)
+texture = ExtResource("2_35c8n")
+region_enabled = true
+region_rect = Rect2(818, 291, 203, 161)
+
+[node name="shirt_blue" type="Sprite2D" parent="."]
+position = Vector2(1062, 325)
+texture = ExtResource("2_35c8n")
+region_enabled = true
+region_rect = Rect2(1035, 292, 206, 160)
+
+[node name="shirt_green" type="Sprite2D" parent="."]
+position = Vector2(1062, 511)
+texture = ExtResource("2_35c8n")
+region_enabled = true
+region_rect = Rect2(1250, 290, 209, 161)
+
+[node name="shirt_yellow" type="Sprite2D" parent="."]
+position = Vector2(838, 98)
+texture = ExtResource("2_35c8n")
+region_enabled = true
+region_rect = Rect2(1035, 481, 209, 164)
+
+[node name="shirt_purple" type="Sprite2D" parent="."]
+position = Vector2(840, 321)
+texture = ExtResource("2_35c8n")
+region_enabled = true
+region_rect = Rect2(1249, 482, 209, 162)
+
+[node name="cap_boy" type="Sprite2D" parent="."]
+position = Vector2(610, 73)
+texture = ExtResource("2_35c8n")
+region_enabled = true
+region_rect = Rect2(809, 696, 211, 110)
+
+[node name="cap_girl" type="Sprite2D" parent="."]
+position = Vector2(131, 266)
+texture = ExtResource("2_35c8n")
+region_enabled = true
+region_rect = Rect2(1068, 703, 144, 102)
+
+[node name="glass" type="Sprite2D" parent="."]
+position = Vector2(341, 260)
+texture = ExtResource("2_35c8n")
+region_enabled = true
+region_rect = Rect2(1253, 728, 190, 72)
+
+[node name="female_yellow_hair" type="Sprite2D" parent="."]
+position = Vector2(127, 443)
+texture = ExtResource("2_35c8n")
+region_enabled = true
+region_rect = Rect2(1087, 53, 188, 192)
+
+[node name="female_blonde_hair" type="Sprite2D" parent="."]
+position = Vector2(347, 438)
+texture = ExtResource("2_35c8n")
+region_enabled = true
+region_rect = Rect2(712, 63, 188, 170)
